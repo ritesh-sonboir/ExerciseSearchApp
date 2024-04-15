@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import HeroSection from '../Components/HeroSection'
 import SearchInputSection from '../Components/SearchInputSection'
 import Exercise from './Exercise'
+import Header from '../Components/HeaderFooter/Header'
+import Footer from '../Components/HeaderFooter/Footer'
 
 
 function Home() {
@@ -11,6 +13,7 @@ function Home() {
 
   return(
     <>
+     <Header/>
      <HeroSection/>
      <SearchInputSection
        setExercises = {setExercises}
@@ -22,6 +25,7 @@ function Home() {
        setExercises = {setExercises}
        bodyPart = {bodyPart}
      />
+     <Footer/>
     </>
   )
 }
