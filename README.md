@@ -1,8 +1,16 @@
 # React + Vite
+<h2>Link <a href='https://exercise-search-app.vercel.app/'>Visit</a></h2>
+<h1>Fitness Exercise Search Web Application</h1>
+<h3>Overview</h3>
+This web application is designed to help users find fitness exercises based on their preferences and goals. Whether you're looking to build muscle, improve flexibility, or enhance cardiovascular health, this app provides a comprehensive database of exercises to meet your needs. Additionally, it utilizes a third-party API (RapidAPI) for exercise data retrieval and integrates with the YouTube API for related video demonstrations.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h2>Features</h2>
+<li>Search Functionality: Users can search for exercises by keyword, muscle group, equipment, or difficulty level.</li>
+<li>Filtering Options: Refine search results using various filters such as duration, intensity, and targeted muscle groups.</li>
+<li>Exercise Details: Each exercise entry includes detailed information such as instructions, illustrations, and video demonstrations sourced from YouTube.</li>
+Community Interaction: Engage with other users through comments, ratings, and sharing workout routines.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>Technologies Used</h2>
+Frontend: HTML, TelwindCSS, JavaScript (React.js)
+Backend: Node.js
+Database API: exerciseDB
