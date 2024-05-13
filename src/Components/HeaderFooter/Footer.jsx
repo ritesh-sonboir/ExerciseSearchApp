@@ -3,7 +3,7 @@ import logo from './logo/Logo.png'
 import { Link } from 'react-router-dom'
 function Footer() {
   return (
-<footer className="flex z-10 bg-pink-100 pb-10 pt-20 dark:bg-dark justify-between px-20 lg:pb-20 lg:pt-[120px]">
+<footer className="flex bg-pink-100 pb-10 pt-20 dark:bg-dark justify-between px-20 lg:pb-20 lg:pt-[120px] w-full">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">

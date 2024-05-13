@@ -22,7 +22,7 @@ function Exercise({exercises,setExercises,bodyPart}) {
 
         {
            currentExercises.map((exercise,index)=>(
-          <ExerciseCart exercises = {exercise} key={index}/>
+               <ExerciseCart exercises = {exercise} key={index}/>
          ))
         }
       </div> 

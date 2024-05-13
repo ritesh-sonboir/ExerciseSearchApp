@@ -18,30 +18,28 @@ function SearchInputSection({setExercises,bodyPart,setBodyPart}) {
 
 
 
-     const handleSearch = async() =>{
-      const exercisesData = await fetchData(exerciseOptions).then((data)=>{
-        console.log('search exercises: ',data)
-        return data
-      }).catch((err)=>{
-        console.log('input err',err)
-      })
-     
-      
+  const handleSearch = async() =>{
+    const exercisesData = await fetchData(exerciseOptions).then((data)=>{
+      console.log('search exercises: ',data)
+      return data
+    }).catch((err)=>{
+      console.log('input err',err)
+    }) 
 
-      //filtering data
-      
-      const searchExerciseData = exercisesData.filter(
-        (exercise) => exercise.name.toLowerCase().includes(search)
-         || exercise.target.toLowerCase().includes(search)
-         || exercise.bodyPart.toLowerCase().includes(search)
-         || exercise.equipment.toLowerCase().includes(search) 
-         || exercise.instructions.toString().toLowerCase().includes(search)
-      )
-      setSearch('')
-      setExercises(searchExerciseData);
+    //filtering data
+    
+    const searchExerciseData = exercisesData.filter(
+      (exercise) => exercise.name.toLowerCase().includes(search)
+       || exercise.target.toLowerCase().includes(search)
+       || exercise.bodyPart.toLowerCase().includes(search)
+       || exercise.equipment.toLowerCase().includes(search) 
+       || exercise.instructions.toString().toLowerCase().includes(search)
+    )
+    setSearch('')
+    setExercises(searchExerciseData);
 
-     } 
-
+   } 
+    
   return (
   <>
     <div className='flex flex-col px-5 items-center py-28 bg-pink-100'>
@@ -69,7 +67,7 @@ function SearchInputSection({setExercises,bodyPart,setBodyPart}) {
       </button>
   </div>
 </div>  
-<HorizantalScrollBar data = {bodyPartData} bodyPart = {bodyPart} setBodyPart = {setBodyPart}/>
+<HorizantalScrollBar data = {bodyPartData} bodyPart = {bodyPart} setBodyPart = {setBodyPart} />
 </div>
 <div>
   

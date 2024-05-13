@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import {useParams} from 'react-router-dom'
 import Detail from '../Components/Detail'
 import ExerciseVideos from '../Components/ExerciseVideos'
-import SimilerExercises from '../Components/SimilerExercises'
 import {fetchDatabodypart,exerciseOptions,youtubeOptions} from '../utils/fetchData'
+import Header from '../Components/HeaderFooter/Header'
 
 
 function ExerciseDetails() {
@@ -32,11 +32,15 @@ function ExerciseDetails() {
   },[id])
  // const urlForExerciseData = `https://exercisedb.p.rapidapi.com/exercises/exercise/3013`
   return (
+  <>
+   <Header/>
     <div className='flex flex-col '>
         <Detail exerciseDetail = {exerciseDetail}/>
         <ExerciseVideos reletedVideo = {exerciseVideo} exerciseName = {exerciseDetail.name}/>
-        <SimilerExercises/>
+        
     </div>
+   
+  </>
   )
 }
 
