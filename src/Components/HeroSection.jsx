@@ -1,5 +1,6 @@
 import React from 'react'
 import '../assets/images/banner.png'
+import bannerimg from '../assets/pngegg.png'
 function HeroSection() {
   return (
     <div className=' min-h-screen px-5 py-20 scroll-smooth'>
@@ -12,20 +13,18 @@ function HeroSection() {
   >
     <div className="mb-4 flex items-center justify-center lg:justify-start">
       <h4 className="ml-2 text-sm font-bold tracking-widest text-primary">
-        TRENDIEST TAILWIND TEMPLATES
+        EXERCISE SEARCH APP - BY RITESH
       </h4>
     </div>
     <h1
       className="mb-8 text-4xl font-extrabold leading-tight text-dark-grey-900 lg:text-5xl xl:w-11/12 xl:text-6xl"
     >
-      Take your website to the next level with Horizon UI
+      1000+ Exercise you can explore here
     </h1>
     <p
       className="mb-10 text-base font-medium leading-7 text-dark-grey-600 xl:w-3/4"
     >
-      Save hundreds of hours trying to create and develop a dashboard from
-      scratch. The fastest, most responsive & trendiest dashboard is here.
-      Seriously.
+      Inpruve your health Next level using our exercise 
     </p>
     <div className="flex flex-col items-center lg:flex-row gap-4">
       <button
@@ -48,7 +47,7 @@ function HeroSection() {
   <div className="flex items-center justify-center lg:flex">
     <img
       className="w-4/5 rounded-2xl"
-      src="https://indianewengland.com/wp-content/uploads/2019/09/Johnny-Sins.jpg"
+      src={bannerimg}
       alt="header image"
     />
   </div>
